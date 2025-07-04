@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Visualizando a Call Stack</title>
+  </head>
+  <body>
+    <h1>Abra o DevTools (F12) e veja a Call Stack</h1>
+    <script>
+      function funcao1() {
+        console.log("Entrou na função 1");
+        funcao2();
+      }
+
+      function funcao2() {
+        console.log("Entrou na função 2");
+        funcao3();
+      }
+
+      function funcao3() {
+        console.log("Entrou na função 3");
+        debugger; // <-- pausa aqui para vermos a pilha
+      }
+
+      funcao1();
+    </script>
+  </body>
+</html>

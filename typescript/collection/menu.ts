@@ -6,7 +6,7 @@ opcao = ler.questionInt("Digite 1 para cadastrar \n Digite 2 para deletar  \n Di
 
 switch (opcao) {
   case 1:
-    console.log("Coloque um numero na lita");
+    console.log("Coloque um numero na lista");
     list.push(ler.questionInt());
     break;
 
